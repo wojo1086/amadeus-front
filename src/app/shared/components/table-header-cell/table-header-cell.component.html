@@ -1,0 +1,7 @@
+<div class="header">
+    <span>{{column.value}}</span>
+    <span class="arrows">
+        <span [ngClass]="{show: column.sort === Sort.DESC}">&#11205;</span>
+        <span [ngClass]="{show: column.sort === Sort.ASC}">&#11206;</span>
+    </span>
+</div>

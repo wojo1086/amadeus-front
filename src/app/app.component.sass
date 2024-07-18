@@ -1,0 +1,47 @@
+table
+    width: 700px
+    background-color: #d2d2d2
+    border-collapse: collapse
+    border-spacing: 0
+    border-radius: 12px
+    overflow: hidden
+
+    tr
+        border-bottom: 1px solid #ababab
+
+        &:last-of-type
+            border-bottom: none
+
+            th
+                background-color: #00E08F
+                padding: .75rem 0
+                cursor: pointer
+                text-align: left
+
+                &:last-of-type
+                    padding-right: 2rem
+
+                &:first-of-type
+                    padding-left: 2rem
+
+        td
+            padding: .75rem 0
+            text-align: left
+
+            &:last-of-type
+                padding-right: 2rem
+
+            &:first-of-type
+                padding-left: 2rem
+
+.red
+    color: red
+
+.green
+    color: #3d9900
+
+.positive
+    @extend .green
+
+    &:before
+        content: '+'
